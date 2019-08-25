@@ -1,6 +1,6 @@
-# Integration Sample Code In VB.net
+# Integration Sample Code In C#
 
-This code sample explains how to integrate with Nana Servers using VB.net.
+This code sample explains how to integrate with Nana Servers using C#.
 
 In this code sample the following steps [commands] are executed
 
