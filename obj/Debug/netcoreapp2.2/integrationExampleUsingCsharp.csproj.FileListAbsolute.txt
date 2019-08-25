@@ -1,0 +1,11 @@
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/Debug/netcoreapp2.2/integrationExampleUsingCsharp.csprojAssemblyReference.cache
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/Debug/netcoreapp2.2/integrationExampleUsingCsharp.csproj.CoreCompileInputs.cache
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/Debug/netcoreapp2.2/integrationExampleUsingCsharp.AssemblyInfoInputs.cache
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/Debug/netcoreapp2.2/integrationExampleUsingCsharp.AssemblyInfo.cs
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/bin/Debug/netcoreapp2.2/integrationExampleUsingCsharp.deps.json
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/bin/Debug/netcoreapp2.2/integrationExampleUsingCsharp.runtimeconfig.json
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/bin/Debug/netcoreapp2.2/integrationExampleUsingCsharp.runtimeconfig.dev.json
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/bin/Debug/netcoreapp2.2/integrationExampleUsingCsharp.dll
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/bin/Debug/netcoreapp2.2/integrationExampleUsingCsharp.pdb
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/Debug/netcoreapp2.2/integrationExampleUsingCsharp.dll
+/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/Debug/netcoreapp2.2/integrationExampleUsingCsharp.pdb

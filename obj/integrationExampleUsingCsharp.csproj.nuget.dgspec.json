@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/integrationExampleUsingCsharp.csproj": {}
+  },
+  "projects": {
+    "/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/integrationExampleUsingCsharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/integrationExampleUsingCsharp.csproj",
+        "projectName": "integrationExampleUsingCsharp",
+        "projectPath": "/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/integrationExampleUsingCsharp.csproj",
+        "packagesPath": "/Users/abdulelah/.nuget/packages/",
+        "outputPath": "/Users/abdulelah/Projects/nana/integration-examples/integrationExampleUsingCsharp/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/abdulelah/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
