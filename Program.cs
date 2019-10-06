@@ -4,6 +4,7 @@ using System.Data;
 using System.Net.Http;
 using System.Text;
 using System.Linq;
+using System.IO;
 using MySql.Data.MySqlClient; // MySql Adapter
 
 // Install System.Data.DataSetExtensions to Access AsEnumerable()
@@ -67,6 +68,7 @@ namespace integrationExampleUsingCsharp
                             using (DataTable copyTableData = dataBatch.CopyToDataTable<DataRow>()) // copy batched to new datatable
                             {
                               var jsonResult = JsonConvert.SerializeObject(new {product_arrays = copyTableData}); // serialize copied data to JSON object (product_arrays key for product_sync and barcode_arrays for daily sales)
+                              Console.WriteLine(jsonResult);
                               sendRequest(jsonResult); // send request
                               skipCount += 10; // skip the next batch
                             }
@@ -93,13 +95,22 @@ namespace integrationExampleUsingCsharp
         using (HttpClient client = new HttpClient())
           {
               client.DefaultRequestHeaders.Add("Authorization", Token); // append token got from stores query
+              client.DefaultRequestHeaders.Add("User-Agent", "Al-Jazeera");
 
               using (HttpContent content = new StringContent(data, Encoding.UTF8, "application/json")) // prepare data and headers
               {
                   using (HttpResponseMessage response = client.PostAsync(RequestUri, content).Result)
                   {
                       Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                      if (!File.Exists("Log.txt"))
+                      {
+                        File.Create("Log.txt");
+                      }
                       Console.WriteLine("Batch Sent");
+                      File.AppendAllText("Log.txt", "Branch Number " + StoreId + Environment.NewLine);
+                      File.AppendAllText("Log.txt", DateTime.Now.ToString() + Environment.NewLine);
+                      File.AppendAllText("Log.txt", response.Content.ReadAsStringAsync().Result + Environment.NewLine);
+                      File.AppendAllText("Log.txt", "============================================================" + Environment.NewLine);
                   }
               }
           }
